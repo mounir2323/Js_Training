@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0d1b2a; /* Ajusté pour correspondre à l'image */
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  background-color: #17203a;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #b7becb;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #44d3aa;
+}
+
+.cv-button {
+  background-color: #44d3aa;
+  color: #17203a;
+  border-radius: 5px;
+}
+
+.cv-button:hover {
+  background-color: #3ba189;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  margin-top: 100px; /* Ajustement pour la nav */
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #44d3aa;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 38px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.description {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #b7becb;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid #44d3aa;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #44d3aa;
+  font-weight: bold;
+}
+
+.buttons a:hover {
+  background-color: #44d3aa;
+  color: #17203a;
+}
+
+.image-container {
+  margin-top: 30px;
+  position: relative;
+}
+
+.image-container img {
+  max-width: 300px;
+  border-radius: 50%;
+  border: 5px solid #17203a;
+}
+
+.image-container .dashed-line {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  height: 200px;
+  width: 200px;
+  border: 2px dashed #44d3aa;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* .footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #b7becb;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 20px;
+  margin: 0 10px;
+} */
