@@ -1,28 +1,43 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #0d1b2a; /* Ajusté pour correspondre à l'image */
-  color: #fff;
+  height: 100vh;
+  background: linear-gradient(180deg, #212F45 0%, rgba(0, 0, 0, 0.72) 100%) !important;
+  color: #fcfcfc;
+  
 }
 
 header {
   width: 100%;
-  background-color: #17203a;
-  padding: 20px 0;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 17.247px 114.022px 10.066px 92.985px;
   position: fixed;
   top: 0;
+  color: #FFF;
+	font-family: Poppins , sans-serif;
+	font-size: 13.498px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 14.998px; 
   z-index: 1000;
 }
 
 nav {
+width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  padding: 5px;
+  gap: 20px;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 20px;
+  display: inline-flex;
+	padding: 2.247px 114.022px 10.066px 92.985px;
 }
 
 .nav-links li {
@@ -31,108 +46,125 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #b7becb;
-  font-weight: bold;
-  padding: 10px 20px;
+  color: #ffffff; 
+  font-family: 'Poppins', sans-serif;
+  font-size: 13.5px;
+  padding: 10px;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #44d3aa;
+  color: #00FAFF;
 }
 
-.cv-button {
-  background-color: #44d3aa;
-  color: #17203a;
-  border-radius: 5px;
+.nav-links .cv-button {
+  background-color: #006466;
+  color: #D3DECE;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  flex-shrink: 0;
+  text-decoration: none;
+  font-family: 'Poppins' sans-serif;
+  transition: background-color 0.3s;
 }
 
-.cv-button:hover {
-  background-color: #3ba189;
+.nav-links .cv-button:hover {
+  background-color: #D3DECE;
+  color: #006466;
 }
+
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-  margin-top: 100px; /* Ajustement pour la nav */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 50px;
 }
 
-h1 {
-  font-size: 24px;
-  font-weight: normal;
-  margin-bottom: 10px;
+.intro {
+    max-width: 50%;
 }
 
-h2 {
-  font-size: 48px;
-  font-weight: bold;
-  color: #44d3aa;
-  margin-bottom: 5px;
+.container .intro h1 {
+    font-size: 24px;
+    font-weight: normal;
+	color: #006466;
+    margin-bottom: 10px;
 }
 
-h3 {
-  font-size: 38px;
-  font-weight: normal;
-  margin-bottom: 20px;
+.intro h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #006466;
+    margin-bottom: 5px;
+}
+
+.intro h3 {
+    font-size: 58px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .description {
-  max-width: 500px;
-  margin: 0 auto;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #b7becb;
+    max-width: 400px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #b7becb;
+    margin-bottom: 30px;
 }
 
 .buttons {
-  margin-top: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .buttons a {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 10px;
-  border: 1px solid #44d3aa;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #44d3aa;
-  font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #44d3aa;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #44d3aa;
+    font-weight: bold;
 }
 
 .buttons a:hover {
-  background-color: #44d3aa;
-  color: #17203a;
+    background-color: #44d3aa;
+    color: #0d1b2a;
 }
 
 .image-container {
-  margin-top: 30px;
-  position: relative;
+    max-width: 50%;
+    position: relative;
 }
 
 .image-container img {
-  max-width: 300px;
-  border-radius: 50%;
-  border: 5px solid #17203a;
+    max-width: 100%;
+	padding: 20px 20px 10px 10px;
+	box-sizing: border-box
 }
 
-.image-container .dashed-line {
-  position: absolute;
-  top: 50%;
-  left: -50px;
-  height: 200px;
-  width: 200px;
-  border: 2px dashed #44d3aa;
-  border-radius: 50%;
-  z-index: -1;
+.dashed-line {
+    position: absolute;
+    bottom: -40px;
+    left: -60px;
+    height: 400px;
+    width: 400px;
+    border: 3px dashed #44d3aa;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(-45deg);
 }
-
-/* .footer {
+.footer {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   width: 100%;
   text-align: center;
   color: #b7becb;
@@ -145,4 +177,4 @@ h3 {
 .social-icons img {
   width: 20px;
   margin: 0 10px;
-} */
+}
